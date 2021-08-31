@@ -43,6 +43,11 @@ jobs:
       - name: Setup | Checkout
         uses: actions/checkout@v2.3.4
 
+  shellcheck:
+    steps:
+      - name: ShellCheck [Linter]
+        uses: ludeeus/action-shellcheck@1.1.0
+
       # Cache files between builds
       # - name: Setup | Cache Cargo
       #   uses: actions/cache@v2
